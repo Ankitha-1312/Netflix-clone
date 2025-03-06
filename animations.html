@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Define the keyframes for the 'slide' animation */
+    @keyframes slide {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(10000px);
+      }
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      /* Use the 'slide' keyframes defined above */
+      animation-name: slide;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; 
+      /* 'alternate' makes the element move back and forth */
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
